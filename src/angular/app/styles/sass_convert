@@ -1,0 +1,2 @@
+#Files to be converted to css
+sass main.scss main.css
