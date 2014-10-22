@@ -1,13 +1,13 @@
-// Create Http server connection
 var http = require('http');
+var mysql = require('mysql');
 
+// Create Http server connection
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type':'text/plain'});
 }).listen(3030,"127.0.0.1");
 console.log('Server running at http://127.0.0.1:3030/');
 
 // Create MySQL Database connection
-var mysql = require('mysql');
 var mysqlConnection = mysql.createConnection({
   host : 'localhost',
   user : 'root',

@@ -5,30 +5,32 @@ module.exports = function(config) {
   config.set({
 
     // base path, that will be used to resolve files and exclude
-    basePath: '',
+    basePath: './',
 
 
     // frameworks to use
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: '../**.*.js', included: false},
-      {pattern: './**.*.js', included: false}
+      'app/bower_components/angular/angular.js',
+      'app/bower_components/angular-ui-router/release/angular-ui-router.js',
+      'app/bower_components/angular-mocks/angular-mocks.js',
+      'app/scripts/**/*.js',
+      'tests/spec/**/*.js',
     ],
 
 
     // list of files to exclude
-    exclude: [
-      
-    ],
+    exclude: [],
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress'],
+    reporters: ['dots', 'junit'],
 
+    junitReporter = { outputFile: 'test-results.xml' };
 
     // web server port
     port: 9876,
@@ -55,7 +57,7 @@ module.exports = function(config) {
     // - Safari (only Mac; has to be installed with `npm install karma-safari-launcher`)
     // - PhantomJS
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
-    browsers: ['PhantomJS', 'Firefox', 'Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // If browser does not capture in given timeout [ms], kill it

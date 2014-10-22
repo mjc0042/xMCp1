@@ -1,0 +1,31 @@
+#main {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+#header {
+  border-radius: 0px; }
+
+.navbar-account {
+  width: 250px; }
+
+.navbar-account-dropdown {
+  width: 50%; }
+
+.navbar-account-user {
+  width: 50%;
+  color: white;
+  padding-top: 15px; }
+
+.category-box {
+  left: 10px;
+  -webkit-box-shadow: -1px 5px 10px 0px rgba(25, 25, 25, 0.75);
+  -moz-box-shadow: -1px 5px 10px 0px rgba(25, 25, 25, 0.75);
+  box-shadow: -1px 5px 10px 0px rgba(25, 25, 25, 0.75); }
+
+.category {
+  padding-left: 10px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.category:hover {
+  background-color: #A3C2FF; }
